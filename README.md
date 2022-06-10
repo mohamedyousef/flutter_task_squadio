@@ -11,7 +11,8 @@ When an image is selected, it’s opened in its original size in a new screen wh
 
 <span align="center">
   <img src="screenshots/home_page.png"    height="500">
-  <img src="screenshots/home_page.png"   height="500">
+  <img src="screenshots/person_details.png"   height="500">
+  <img src="screenshots/image_view.png"   height="500">
 </span>
 
 
