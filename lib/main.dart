@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:ibtikar_task/src/core/network/network.dart';
 import 'package:ibtikar_task/src/features/people/presentation/view/people_list_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await AppPathProvider.initPath();
   runApp(const ProviderScope(child: _Setup()));
 }
 
