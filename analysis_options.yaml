@@ -1,0 +1,49 @@
+# Global lints for both apps and all local packages.
+
+# we may remove this library if we found the rules below are enough for us.
+include: package:lint/analysis_options.yaml
+
+linter:
+  rules:
+    avoid_print: true
+    use_key_in_widget_constructors: false
+    always_declare_return_types: true
+    prefer_final_in_for_each: true
+    prefer_final_locals: true
+    require_trailing_commas: true
+    avoid_redundant_argument_values: true
+    sort_child_properties_last: true
+    always_use_package_imports: true
+    avoid_void_async: true
+    directives_ordering: true
+    avoid_positional_boolean_parameters: true
+    unnecessary_await_in_return: true
+    unnecessary_parenthesis: true
+    avoid_dynamic_calls: true
+    avoid_annotating_with_dynamic: true
+    avoid_type_to_string: true
+    avoid_slow_async_io: true
+    avoid_types_as_parameter_names: true
+    cancel_subscriptions: true
+    comment_references: true
+    throw_in_finally: true
+
+    prefer_if_elements_to_conditional_expressions: false
+    depend_on_referenced_packages: false
+    sort_pub_dependencies: false
+
+analyzer:
+  strong-mode:
+    implicit-casts: false
+
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "lib/generated"
+  errors:
+    always_declare_return_types: error
+    avoid_print: error
+    missing_required_param: error
+    missing_return: error
+    todo: ignore
+    parameter_assignments: warning
