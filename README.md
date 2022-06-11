@@ -15,7 +15,6 @@ When an image is selected, it’s opened in its original size in a new screen wh
   <img src="screenshots/image_view.png"   height="500">
 </span>
 
-
-State Management : 
-RiverPod 
-  
+<br/>
+<h3>State Management :</h3>  
+<p>RiverPod</p> 
