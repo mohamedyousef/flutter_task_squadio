@@ -51,7 +51,7 @@ class ImagesEntity {
 
 @JsonSerializable()
 class ImageEntity {
-  @JsonKey(name: 'file_path')
+  @JsonKey(name: 'poster_path')
   final String? path;
 
   const ImageEntity(this.path);
